@@ -3,8 +3,7 @@ import { Spotlight } from "./ui/Spotlight";
 import { cn } from "@/lib/utils";
 import MagicButton from "./ui/MagicButton";
 import { FaLocationArrow } from "react-icons/fa";
-import { TypewriterEffectSmooth } from "./ui/TypewriterEffect";
-import { HERO_WORDS, SITE_CONFIG } from "@/lib/constants";
+import { SITE_CONFIG } from "@/lib/constants";
 import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
