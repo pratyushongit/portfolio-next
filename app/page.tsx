@@ -3,9 +3,9 @@ import { FloatingNav } from "@/components/ui/FloatingNav";
 import Grid from "@/components/Grid";
 import { FaHome } from "react-icons/fa";
 import { NAV_ITEMS } from "@/lib/constants";
+import RecentProjects from "@/components/RecentProjects";
 
 export default function Home() {
-  // Map icon names to actual components
   const navItemsWithIcons = NAV_ITEMS.map((item) => ({
     ...item,
     icon: item.icon === "FaHome" ? <FaHome /> : undefined,
@@ -17,6 +17,7 @@ export default function Home() {
         <FloatingNav navItems={navItemsWithIcons} />
         <Hero />
         <Grid />
+        <RecentProjects />
       </div>
     </main>
   );
