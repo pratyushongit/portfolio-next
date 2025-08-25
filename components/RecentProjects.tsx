@@ -5,19 +5,19 @@ import { FaLocationArrow } from "react-icons/fa";
 
 const RecentProjects = () => {
   return (
-    <div className="py-20">
-      <h1 className="heading">
+    <div className="py-20" id="projects">
+      <h1 className="text-center text-4xl leading-10 font-bold md:text-5xl md:leading-none">
         A small selection of{" "}
         <span className="text-purple">recent projects</span>
       </h1>
-      <div className="flex flex-wrap items-center justify-center p-4 gap-x-24 gap-y-8 mt-10">
+      <div className="flex flex-wrap items-center justify-center p-4 gap-x-8 gap-y-12 sm:gap-x-16 sm:gap-y-16 lg:gap-x-24 lg:gap-y-24 mt-10">
         {projects.map(({ id, title, des, img, iconLists, link }) => (
           <div
-            className="sm:h-[41rem] h-[32rem] lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
+            className="sm:h-[28rem] h-[24rem] lg:min-h-[26rem] flex items-center justify-center sm:w-[570px] w-[80vw]"
             key={id}
           >
             <PinContainer title={link} href={link}>
-              <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[40vh] h-[30vh] mb-10">
+              <div className="relative flex items-center justify-center sm:w-[570px] w-[80vw] overflow-hidden sm:h-[26vh] h-[22vh] mb-10">
                 <div
                   className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                   style={{ backgroundColor: "#13162D" }}
