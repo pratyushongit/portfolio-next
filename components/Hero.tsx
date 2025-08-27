@@ -9,7 +9,7 @@ import { HERO_WORDS } from "@/data";
 
 const Hero = () => {
   return (
-    <div>
+    <div className="pt-36">
       <div>
         <Spotlight
           className="-top-40 -left-10 md:-left-32 md:-top-20 h-screen"
