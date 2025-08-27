@@ -26,7 +26,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
 
   const { scrollYProgress } = useScroll({
     target: containerRef,
-    offset: ["start 10%", "end 50%"],
+    offset: ["start 0%", "end 50%"],
   });
 
   const heightTransform = useTransform(scrollYProgress, [0, 1], [0, height]);
@@ -44,19 +44,19 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
             viewport={{ once: true, margin: "-100px" }}
             className="flex justify-start pt-6 md:pt-24 md:gap-12 group"
           >
-            <div className="sticky flex flex-col md:flex-row z-40 items-center top-1/2 -translate-y-1/2 self-center max-w-xs lg:max-w-sm md:w-full">
-              <motion.div 
+            <div className="sticky flex flex-col md:flex-row z-40 items-center top-40 self-start max-w-xs lg:max-w-sm md:w-full">
+              <motion.div
                 className="h-12 w-12 absolute left-2 md:left-2 rounded-full bg-gradient-to-br from-purple-500/20 to-blue-500/20 backdrop-blur-sm border border-purple-300/30 dark:border-blue-400/30 flex items-center justify-center shadow-lg group-hover:scale-110 transition-all duration-300"
                 whileHover={{ scale: 1.15 }}
               >
-                <motion.div 
+                <motion.div
                   className="h-5 w-5 rounded-full bg-gradient-to-br from-purple-500 to-blue-500 shadow-inner relative overflow-hidden"
                   whileHover={{ scale: 1.2 }}
                 >
                   <div className="absolute inset-0 bg-gradient-to-br from-white/30 to-transparent rounded-full" />
                 </motion.div>
               </motion.div>
-              <motion.h3 
+              <motion.h3
                 className="hidden md:block text-xl md:pl-20 md:text-4xl font-bold text-slate-600 dark:text-slate-300 bg-gradient-to-r from-purple-600 via-blue-600 to-indigo-600 bg-clip-text text-transparent group-hover:from-purple-500 group-hover:via-blue-500 group-hover:to-indigo-500 transition-all duration-300"
                 whileHover={{ scale: 1.02 }}
               >
@@ -64,7 +64,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
               </motion.h3>
             </div>
 
-            <motion.div 
+            <motion.div
               className="relative pl-20 pr-6 md:pl-6 w-full"
               whileHover={{ x: 5 }}
               transition={{ type: "spring", stiffness: 300 }}
@@ -82,7 +82,7 @@ export const Timeline = ({ data }: { data: TimelineEntry[] }) => {
           style={{
             height: height + "px",
           }}
-          className="absolute md:left-8 left-8 top-0 overflow-hidden w-[3px] bg-gradient-to-b from-transparent via-slate-300/50 dark:via-slate-600/50 to-transparent rounded-full"
+          className="absolute md:left-[1.9375rem] left-[1.9375rem] top-0 overflow-hidden w-[3px] bg-gradient-to-b from-transparent via-slate-300/50 dark:via-slate-600/50 to-transparent rounded-full"
         >
           <motion.div
             style={{
