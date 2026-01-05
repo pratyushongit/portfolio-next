@@ -12,7 +12,7 @@ const Experience = () => {
     return workExperience.map((experience) => ({
       title: experience.year,
       content: (
-        <div className="space-y-4">
+        <div className="space-y-2">
           <div className="flex flex-col space-y-2">
             <h3 className="text-lg font-semibold text-neutral-800 dark:text-neutral-200">
               {experience.title}
@@ -20,16 +20,20 @@ const Experience = () => {
             <h4 className="text-base font-medium text-blue-600 dark:text-blue-400">
               {experience.company}
             </h4>
-            <p className="text-sm text-neutral-600 dark:text-neutral-400 leading-relaxed">
+            <p className="text-sm text-neutral-800 dark:text-neutral-200 leading-relaxed">
               {experience.desc}
             </p>
           </div>
 
-          <div className="flex items-center space-x-2 mt-4">
-            <div className="h-2 w-2 rounded-full bg-blue-500"></div>
-            <span className="text-xs text-neutral-500 dark:text-neutral-500">
-              Professional Experience
-            </span>
+          <div className="mt-6">
+            {experience.work.map((work) => (
+              <div key={work} className="flex items-center space-x-2 mt-2">
+                <div className="h-2 w-2 shrink-0 rounded-full bg-blue-500"></div>
+                <span className="text-sm text-neutral-500 dark:text-neutral-500">
+                  {work}
+                </span>
+              </div>
+            ))}
           </div>
         </div>
       ),
