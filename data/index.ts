@@ -1,13 +1,6 @@
 export const HERO_WORDS =
   "Transforming Concepts into Seamless User Experiences";
 
-export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact" },
-];
-
 export const leftLists = ["ReactJS", "Redux", "NextJS"];
 export const rightLists = ["NestJS", "NodeJS", "SQL"];
 
