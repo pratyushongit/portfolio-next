@@ -1,8 +1,7 @@
-export const HERO_WORDS =
-  "Transforming Concepts into Seamless User Experiences";
+export const HERO_WORDS = "Turning Complex Ideas into Production-Ready Systems";
 
-export const leftLists = ["ReactJS", "Redux", "NextJS"];
-export const rightLists = ["NestJS", "NodeJS", "SQL"];
+export const leftLists = ["ReactJS", "TypeScript", "NextJS"];
+export const rightLists = ["NestJS", "Mastra", "Docker"];
 
 export const gridItems = [
   {
@@ -37,7 +36,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Scalable web solutions, product-first approach",
+    title: "AI-driven platforms & scalable developer experience",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -48,7 +47,7 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a video platform with superpowers!",
+    title: "Currently building agentic AI systems & developer platforms",
     description: "The Inside Scoop",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
@@ -114,54 +113,63 @@ export const workExperience = [
     id: 1,
     year: "2024 - Present",
     company: "Contentstack",
-    title: "Lead Web Developer",
-    desc: "Leading end-to-end web initiatives with a focus on team execution and scalable delivery.",
+    title: "Senior Software Engineer - 2",
+    desc: "Architecting agentic AI frameworks, multi-agent orchestration, and developer platforms from the ground up.",
     work: [
-      "Led the development of an Agent-Builder application leveraging React.js and Redux.",
-      "Built and maintained several backend microservices for the Agent-Builder application using NestJS.",
-      "Worked on a web-based preview and sharing platform using Next.js and Zustand.",
-      "Led a team of 6 developers and have also mentored junior developers.",
-      "Facilitated weekly dev meetings and have actively engaged in code-reviews.",
-      "Participated in sprint planning, grooming, SoS & retrospective meetings.",
+      "Led the architecture and development of an Agentic AI framework from the ground up using the open-source TypeScript framework Mastra, enabling scalable multi-agent orchestration, continuous tool execution, and dynamic context management.",
+      "Designed and developed a scalable Agent Builder frontend using React, enabling intuitive configuration of agent tools, triggers, and instruction workflows.",
+      "Developed custom Slate.js plugins to enable Notion-style tool and variable chip insertion within agent builder instructions, improving prompt authoring efficiency.",
+      "Implemented a RAG-based retrieval system to dynamically identify and fetch relevant tools and triggers from a vector database based on user prompts.",
+      "Delivered a prompt-to-agent platform, allowing users to create, configure, and publish AI agents using natural language.",
+      "Implemented advanced agent workflows with Chain-of-Thought reasoning and Human-in-the-Loop controls to improve decision accuracy, transparency, and reliability.",
+      "Led development of a production-grade MCP server, deeply integrated into developer workflows to enable seamless AI-assisted automation.",
+      "Built third-party connectors from the ground up for OpenAI ChatGPT, AWS Bedrock, Airtable, BigCommerce, Box, and Microsoft Teams within the Automate platform.",
+      "Engineered a high-performance Live Preview SDK using Preact alongside a scalable NestJS microservices backend, enabling real-time collaborative editing with threads, comments, and discussions.",
     ],
   },
   {
     id: 2,
     year: "2021 - 2024",
     company: "Johnson Controls",
-    title: "Senior Web Developer",
-    desc: "Delivered high-performance web applications with a focus on architecture and code quality.",
+    title: "Senior Software Engineer",
+    desc: "Delivered high-performance web applications with a focus on architecture, testing, and team leadership.",
     work: [
-      "Developed a single-page reporting app using React.js, Redux and AG Grid.",
+      "Developed a single-page reporting app using React.js, Redux and Tailwind CSS.",
       "Replaced the traditional login mechanism with OAuth 2.0 to login seamlessly.",
-      "Worked on a micro-frontend architecture, facilitating smoother feature roll-outs.",
-      "Worked on several tech debt topics to improve the application's performance.",
-      "Participated in requirement analysis meeting and code reviews.",
-      "Lead a team responsible for the end-to-end development of the application.",
+      "Written unit test cases using Jest which drastically decreased application errors.",
+      "Worked on a micro-frontend architecture, facilitating smoother feature roll-outs. Also worked on several tech debt topics to improve the application's performance.",
+      "Led a team of 6 developers and have also mentored junior developers.",
+      "Facilitated weekly dev meetings and have actively engaged in code-reviews.",
+      "Participated in sprint planning, grooming, SoS & retrospective meetings.",
     ],
   },
   {
     id: 3,
     year: "2018 - 2021",
-    company: "Siemens",
-    title: "Senior Web Developer",
-    desc: "Built scalable, analytics-driven single-page applications with a focus on performance and UX.",
+    company: "Siemens Technology India",
+    title: "Software Developer",
+    desc: "Built interactive, cross-browser web applications with real-time data visualization for IoT domains.",
     work: [
-      "Developed single page applications using Angular 13 and PrimeNG.",
-      "Implemented various analytical features using Chart.js & D3.js.",
-      "Improved user experience by using filter based sorting and searching on a list using custom pipes, replaced polling with web sockets.",
+      "Developed highly interactive web applications with cross-browser compatibility utilizing HTML, CSS3, SASS, JavaScript, TypeScript, Angular, Angular Material and integrating RESTful APIs.",
+      "Developed web-accessible websites with multilingual support.",
+      "Implemented real-time graphs using Chart.js and web sockets (Socket.io).",
+      "Developed applications pertaining to the IoT domain.",
+      "Removed dependency on local/session storage by implementation of unique URL based routing.",
+      "Participated in design reviews and provided input to design recommendations.",
+      "Built responsive and mobile optimized websites using Bootstrap, media queries, flexbox.",
+      "Developed unit tests for the application using the Jasmine testing framework.",
     ],
   },
   {
     id: 4,
     year: "2015 - 2018",
     company: "Infosys",
-    title: "Web Developer",
-    desc: "Worked on building accessible, cross-platform web applications from the ground up.",
+    title: "Senior Systems Engineer",
+    desc: "Developed accessible e-commerce web applications adhering to WCAG and BOIA guidelines.",
     work: [
-      "Developed a website from scratch using Angular 6 to remove BOIA violations in the website adhering to WCAG guidelines.",
-      "Paired mouse and key events for accessibility.",
-      "Worked with browser compatibility and cross-platform device issues.",
+      "Worked as a UI developer for developing a web-accessible e-commerce website for a leading automobile manufacturing company.",
+      "Developed the whole e-commerce website from scratch to remove the BOIA (Bureau of Internet Accessibility) violations in the website.",
+      "Involved in extensive HTML, JavaScript & jQuery coding as it required pairing of both mouse and key events. Styled the webpages using CSS3.",
     ],
   },
 ];
